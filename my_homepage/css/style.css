@@ -1,114 +1,168 @@
-body {
+* {
     font-family: Quicksand, sans-serif;
-    font-size: 30px;
-    font-weight: 100;
-    height: 100%;
-    width: 100%;
     margin: 0;
+    padding: 0;
 }
 
-header {
-    color: #3C3F47;
-    background-color: #979DA6;
-    color: #3C3F47;
-    font-size: 20px;
-    margin-bottom: 5%;
-    padding: 2% 5%;
-    text-align: left;
+body {
+    background-color: #fff;
+    margin-top: 10px;
 }
 
-.blurred {
-    margin: 20% auto;
-    opacity: 0.7;
-    transition: 0.5s;
-}
+h1 {
+    position: absolute;
+    width: 40%;
+    height: 63px;
+    left: 50px;
+    top: 100px;
 
-img {
-    margin: auto;
-    display: block;
-    width: 50%;
-}
-
-.blurred:hover {
-    opacity: 1;
-}
-
-.menu {
-    display: inline-flex;
-	justify-content: center;
-	width: 92%;
-	background-color: #979DA6;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
     font-size: 35px;
-    margin: 2%;
-    padding: 2%;
+    line-height: 40px;
+    z-index: 1;
+    /* identical to box height */
+    color: #000000;
 }
 
-.btn-menu:hover {
-    background-color: #68788C;
-    transition: 0.5s ease-in-out;
+.photo {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: -25px;
+    z-index: 1;
 }
 
-hr {
-    border: 1px solid #F2E205;
-    border-radius: 5px;
+a {
+    color: #000447;
+    margin: 0 5px;
+    text-decoration: none;
 }
 
-button {
-    background-color: #979DA6;
-    border-top: 1px solid #68788C;
-    border-bottom: 1px solid #68788C;
-    border-left: none;
-    border-right: none;
-    box-shadow: none;
-    font-size: 20px;
-    height: 5em;
-    margin: 0.1em;
-    padding: 0.2em;
-    width: 100%;
-    color: #F2EEB3;
-}
-#findMe {
-    background-color: #F2EEB3;
-    border: none;
-    color: #3C3F47;
-    transition: 0.5s ease-in-out;
-    margin: 0;
-}
+a:hover {
 
-#findMe:hover {
-    background-color: #F2D64B;
-    font-weight: bolder;
+    text-decoration: underline;
 }
 
 footer {
-    background-color: white;
-    color: black;
-    height: 10%;
-    padding: 1em 0em;
-    text-align: center;
-    width: auto;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    bottom: 0;
+    width: 100%;
 }
 
-.label {
-    display: inline-flex;
-    font-size: 30px;
-    padding: 0 10%;
+footer > * {
+    margin: 15px 0;
+    width: 80%;
 }
 
-.column {
-    font-size: 1.2em;
-    padding: 1em;
-    width: 50%;
+
+.logos {
+    position: relative;
+    width: fit-content;
+    height: 50px;
+    top: 60%;
+    left: 50px;
+    z-index: 1;
 }
 
-.img-pair {
+.logos>* {
+    margin: 0 3%;
+}
+
+.logo {
+    /* position: absolute; */
+    width: 50px;
+    height: 50px;
+}
+
+h2 {
+    position: relative;
+    width: 30%;
+    height: 76px;
+    left: 49px;
+    top: 190px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+
+    color: #000000;
+    z-index: 1;
+}
+
+.container {
     display: flex;
     justify-content: center;
-	width: 90%;
-	margin: 5%;
+    align-items: center;
 }
 
-.img-in-pair {
-    width: 30%;
-    margin: 1em;
+.background {
+    background-size: 500% 500%;
+    height: 400px;
+    overflow: hidden;
+    width: 62.5%;
+    animation: gradient 25s ease infinite;
+    margin: auto;
+    background-color: #FFB5B5;
+    background-image: linear-gradient(to right, #FFB5B5, #6b7cf7, #fcf98e);
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+}
+
+.c1 {
+    width: 595px;
+    height: 595px;
+    left: -40%;
+    top: 0;
+    background: rgba(242, 242, 242, 0.36);
+}
+
+.c2 {
+    width: 400px;
+    height: 400px;
+    left: -25%;
+    top: 50%;
+    background: rgba(242, 242, 242, 0.36);
+}
+
+.c3 {
+    width: 300px;
+    height: 300px;
+    left: 75%;
+    top: -20%;
+
+    background: rgba(255, 250, 225, 0.38);
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(242, 232, 181, 0.56) 0%, rgba(0, 14, 251, 0.04) 100%);
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
