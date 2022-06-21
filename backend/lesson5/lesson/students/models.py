@@ -35,7 +35,7 @@ class Student(models.Model):
 
     def save(self, *args, **kwargs):
 
-        self.name += ' bebrus'
+        # self.name += ' bebrus'
         super().save(*args, **kwargs)
             
 
