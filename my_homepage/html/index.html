@@ -5,28 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link rel="shortcut icon" href="../images/woman.ico">
     <link rel="stylesheet" href="../css/style.css">
-    
+
     <title>Homepage</title>
 </head>
 
 <body>
-    <div class="col-12 d-flex justify-content-center align-items-center">
+    <div class="header col-12 d-flex justify-content-center align-items-center">
         <div class="background">
             <div class="gradient">
                 <h1 class="name">Veronika Melekhova</h1>
                 <h2 class="description">
-                    <div>CS Student</div>
-                    <div>Math teacher</div>
+                    CS student<br>
+                    Math teacher
                 </h2>
                 <div class="logos d-flex justify-content-center align-items-center">
-                    <a href="https://www.kpi.kharkov.ua/ukr/" target="_blank"><img class="logo" src="../images/khpi-logo.svg"
-                            alt="Khpi logo"></a>
-                    <a href="http://campus.kpi.kharkov.ua/" target="_blank"><img class="logo" src="../images/campus-logo.svg"
-                            alt="Innovation Campus logo"></a>
+                    <a href="https://www.kpi.kharkov.ua/ukr/" target="_blank"><img class="logo"
+                            src="../images/khpi-logo.svg" alt="Khpi logo"></a>
+                    <a href="http://campus.kpi.kharkov.ua/" target="_blank"><img class="logo"
+                            src="../images/campus-logo.svg" alt="Innovation Campus logo"></a>
                     <a href="https://cs50.harvard.edu/" target="_blank"><img class="logo" src="../images/cs50-logo.svg"
                             alt="CS50 course logo"></a>
                 </div>
@@ -38,62 +48,83 @@
             </div>
         </div>
     </div>
-    <div class="d-flex">
-        <div class="col-5 personal-data">
-            <div class="personal-data__header">Personal Data</div>
-            <div class="personal-data__data-group icon-name">
+    <div class="d-flex flex-column flex-md-row">
+        <div class="col-12 col-md-5 left-block">
+            <div class="block__header">Personal Data</div>
+            <div class="block__data-group icon-name">
                 <div>Name</div>
                 <div>Veronika Melekhova</div>
             </div>
-            <div class="personal-data__data-group icon-adress">
+            <div class="block__data-group icon-adress">
                 <div>Adress</div>
                 <div>Pushkinska st., Kharkiv, Ukraine, 61024</div>
             </div>
-            <div class="personal-data__data-group icon-phone">
+            <div class="block__data-group icon-phone">
                 <div>Phone Number</div>
                 <div>+38 063 561-50-64</div>
             </div>
-            <div class="personal-data__data-group icon-email">
+            <div class="block__data-group icon-email">
                 <div>Email</div>
                 <div>veronika0melehova@gmail.com</div>
             </div>
-            <div class="personal-data__data-group icon-date">
+            <div class="block__data-group icon-date">
                 <div>Date of birth</div>
                 <div>12 october 2003</div>
             </div>
-            <div class="personal-data__data-group icon-place">
+            <div class="block__data-group icon-place">
                 <div>Birth place</div>
                 <div>Kramatorsk, Ukraine</div>
             </div>
-    
+            <div class="block__header">Languages</div>
+            <div class="block__data-group ps-1 d-flex flex-column flex-lg-row">
+                <div>Ukrainian</div>
+                <div class="lang-5 ms-auto me-5 p-2"></div>
+            </div>
+            <div class="block__data-group ps-1 d-flex flex-column flex-lg-row">
+                <div>English</div>
+                <div class="lang-4-5 ms-auto me-5 p-2"></div>
+            </div>
+            <div class="block__data-group ps-1 d-flex flex-column flex-lg-row">
+                <div>russian</div>
+                <div class="lang-5 ms-auto me-5 p-2"></div>
+            </div>
         </div>
-        <div class="col-7 about-text">
-            <div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Provident ea saepe in magni vero et aspernatur earum 
-                fugit porro rem vel veniam sit iusto illum tempore, 
-                dignissimos dolore. Consequatur, rem?
+        <div class="col-12 col-md-7 right-block">
+            <div class="block__header">Work experience</div>
+            <div class="block__data-group ps-0">
+                <p>Now I am a student of NTU KHPI & Innovation Campus</p>
+                <a href="https://youtu.be/P4zRDZ-w11E" target="_blank"><img class="photo-card"
+                        src="../images/campus.jpg"></a>
+
+                <p>My educations included:</p>
+                <ul>
+                    <li>JavaScript fullstack</li>
+                    <li>HTML, CSS</li>
+                    <li>MySQL, SQLite</li>
+                    <li>C language</li>
+                    <li>Python (backend)</li>
+                </ul>
+                <!-- <video src="https://youtu.be/AVIDkmfx3cQ" autoplay></video> -->
+
+                <p>Projects:</p>
+                <iframe src="https://www.youtube.com/embed/AVIDkmfx3cQ" title="Math Statistics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/qeCDXY21bG0" title="Election Welcome Back! vmelekhova mshcherban" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Provident ea saepe in magni vero et aspernatur earum
+                    fugit porro rem vel veniam sit iusto illum tempore,
+                    dignissimos dolore. Consequatur, rem?
+                </div>
             </div>
-            <div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Provident ea saepe in magni vero et aspernatur earum 
-                fugit porro rem vel veniam sit iusto illum tempore, 
-                dignissimos dolore. Consequatur, rem?
-            </div>
-            <div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Provident ea saepe in magni vero et aspernatur earum 
-                fugit porro rem vel veniam sit iusto illum tempore, 
-                dignissimos dolore. Consequatur, rem?
-            </div>
+        </div>
     </div>
-    </div>
-    
+
     <footer>
         <hr>
         <div class="d-flex justify-content-center align-items-center">
-            
-            <span>&#169; 2022 Vmelekhova</span><span><a target="_blank" href="https://github.com/melehova">Github</a></span>
+
+            <span>&#169; 2022 Vmelekhova</span><span><a target="_blank"
+                    href="https://github.com/melehova">Github</a></span>
         </div>
     </footer>
 

@@ -2,6 +2,7 @@
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
 body {
@@ -14,12 +15,12 @@ h1.name {
     position: absolute;
     width: 40%;
     height: 63px;
-    left: 50px;
-    top: 100px;
+    left: 10%;
+    top: 20%;
 
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 1.7rem;
     line-height: 40px;
     z-index: 1;
     /* identical to box height */
@@ -86,12 +87,12 @@ h2.description {
     position: relative;
     width: 30%;
     height: 76px;
-    left: 49px;
-    top: 190px;
+    left: 10%;
+    top: 45%;
 
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1.25rem;
     line-height: 25px;
 
     color: #000000;
@@ -107,13 +108,19 @@ h2.description {
 .background {
     background-size: 500% 500%;
     height: 400px;
-    width:100%;
+    width: 100%;
     overflow: hidden;
     animation: gradient 25s ease infinite;
     margin: 0;
     background-color: #FFB5B5;
     background-image: linear-gradient(to right, #FFB5B5, #6b7cf7, #fcf98e);
 }
+
+/* .header {
+    height: 400px;
+} */
+
+
 
 .circle {
     border-radius: 50%;
@@ -164,16 +171,13 @@ h2.description {
     }
 }
 
-.personal-data {
+.left-block,
+.right-block {
     padding: 10px 15px;
 }
 
-.about-text {
-    padding: 10px 15px;
-}
-
-
-.personal-data__header {
+.block__header,
+.block__header {
     padding: 10px 0 0 35px;
     font-style: normal;
     font-weight: 600;
@@ -182,15 +186,16 @@ h2.description {
     text-transform: uppercase;
 }
 
-.personal-data__data-group {
-    padding-left:33px;
+.block__data-group {
+    padding-left: 33px;
     margin-top: 12px;
-    font-size:large;
+    font-size: large;
     /* background-image: url('../images/user-icon.svg'); */
     background-repeat: no-repeat;
-    background-position:top left;
+    background-position: top left;
     word-wrap: break-word;
 }
+
 .icon-name {
     background-image: url('../images/name-icon.svg');
 }
@@ -198,18 +203,139 @@ h2.description {
 .icon-adress {
     background-image: url('../images/adress-icon.svg');
 }
+
 .icon-phone {
     background-image: url('../images/phone-icon.svg');
 }
+
 .icon-email {
     background-image: url('../images/mail-icon.svg');
 }
+
 .icon-date {
     background-image: url('../images/calendar-icon.svg');
 }
+
 .icon-place {
     background-image: url('../images/map-pin-icon.svg');
 }
-.personal-data__data-group > div:nth-child(2) {
-    font-weight: 600;  
+
+.block__data-group>div:nth-child(2) {
+    font-weight: 600;
 }
+
+.lang-5 {
+    background-image: url('../images/star-filled.svg'),
+        url('../images/star-filled.svg'),
+        url('../images/star-filled.svg'),
+        url('../images/star-filled.svg'),
+        url('../images/star-filled.svg');
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: 0 top,
+        25px top,
+        50px top,
+        75px top,
+        100px top;
+    background-size: 25px auto;
+    height: 25px;
+    width: 125px;
+}
+
+.lang-4-5 {
+    background-image: url('../images/star-filled.svg'),
+        url('../images/star-filled.svg'),
+        url('../images/star-filled.svg'),
+        url('../images/star-half.svg'),
+        url('../images/star-empty.svg');
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: 0 top,
+        25px top,
+        50px top,
+        75px top,
+        100px top;
+    background-size: 25px auto;
+    height: 25px;
+    width: 125px;
+}
+
+.photo-card {
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    background: url(campus.jpg);
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin: 5px;
+}
+
+iframe {
+    width: 540px;
+    height: 304px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .gradient {
+        height: 200px;
+    }
+    .background {
+        height: 200px;
+    }
+    .photo {
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        top: -75px;
+    }
+    h1.name {
+        font-size: 1.1em;
+        line-height: 20px;
+    }
+    h2.description {
+        font-size: 0.9em;
+        top: 50%
+    }
+    iframe {
+        width: 450px;
+        height: 253px;
+    }    
+}
+
+
+@media screen and (max-width: 360px) {
+    .gradient {
+        height: 200px;
+    }
+    .background {
+        height: 200px;
+    }
+    .photo {
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        top: -75px;
+    }
+    h1.name {
+        font-size: 1.1em;
+        line-height: 20px;
+    }
+    h2.description {
+        font-size: 0.9em;
+        top: 50%
+    }
+    iframe {
+        width: 300px;
+        height: 170px;
+    }    
+}
+
+
