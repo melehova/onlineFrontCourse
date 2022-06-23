@@ -1,6 +1,9 @@
 #python
 env/
 
+#
+node_modules/
+
 # Prerequisites
 *.d
 
