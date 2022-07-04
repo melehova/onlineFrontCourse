@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './mainBlock.css'
+import getBlog from '../../../api/blog';
 
 const MainBlock = ({ clickButtonFunc, content, display, color }) => {
 
@@ -36,8 +37,12 @@ const MainBlock = ({ clickButtonFunc, content, display, color }) => {
         date: '03.03.03'
     }
 
+    const users = []
+
     const [number, setNumber] = useState(blog.length)
     const [posts, setPosts] = useState(blog)
+    const [students, setStudents] = useState(users)
+
 
 
     // const divRef = document.getElementById('beb').createRef()
@@ -55,6 +60,15 @@ const MainBlock = ({ clickButtonFunc, content, display, color }) => {
         // setPosts([...posts, addPost]) 
         // blog.push(addPost)
     }, [number])
+
+    useEffect(() => {
+        getBlog().then((response) => {
+            setStudents(response.results)
+            console.log(students)
+        });
+    }, [number])
+
+    console.log(students)
 
     /// при любом изменении
     // useEffect(() => {
@@ -92,11 +106,14 @@ const MainBlock = ({ clickButtonFunc, content, display, color }) => {
             <input type="text" id="textInput"></input>
             {/* <div id='beb' ref={divRef}></div> */}
             <div id='beb'></div>
-
-
             {
                 blog.map(({ key, title, author }) => {
                     return <div key={key}>{title} - {author}</div>
+                })
+            }
+            {
+                users.map(({ city, state, country }, key) => {
+                    return <div key={key}>{city} {state} - {country}</div>
                 })
             }
         </div>
